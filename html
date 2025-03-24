@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Content Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>AI Content Generator</h1>
+        <form id="ai-form">
+            <label for="category">Select Category:</label>
+            <select id="category" required>
+                <option value="poem">Poem</option>
+                <option value="joke">Joke</option>
+                <option value="recipe">Recipe</option>
+                <option value="quote">Quote</option>
+                <option value="travel">Travel Destination</option>
+                <option value="babyname">Baby Name</option>
+            </select>
+            <label for="instructions">Enter Instructions:</label>
+            <input type="text" id="instructions" placeholder="e.g., Funny, Romantic, Spicy" required>
+            <button type="submit">Generate</button>
+        </form>
+        <div id="output"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
